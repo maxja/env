@@ -1,0 +1,15 @@
+name: Build
+
+on: 
+	push:
+		branches:
+			- main
+
+jobs: 
+	build:
+		name: Build docker image
+		runs-on: ubuntu-20.04
+		steps:
+			- name: Build
+			  run: docker --version
+			  shell: bash
